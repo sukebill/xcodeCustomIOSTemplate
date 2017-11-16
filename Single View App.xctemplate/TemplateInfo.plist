@@ -24,22 +24,6 @@
 			<string>languageChoice</string>
 			<key>Units</key>
 			<dict>
-				<key>Objective-C</key>
-				<dict>
-					<key>Nodes</key>
-					<array>
-						<string>ViewController.h:comments</string>
-						<string>ViewController.h:imports:importCocoa</string>
-						<string>ViewController.h:interface(___FILEBASENAME___ : UIViewController)</string>
-						<string>ViewController.m:comments</string>
-						<string>ViewController.m:imports:importHeader:ViewController.h</string>
-						<string>ViewController.m:extension</string>
-						<string>ViewController.m:implementation:methods:viewDidLoad(- (void\)viewDidLoad)</string>
-						<string>ViewController.m:implementation:methods:viewDidLoad:super</string>
-						<string>ViewController.m:implementation:methods:didReceiveMemoryWarning(- (void\)didReceiveMemoryWarning)</string>
-						<string>ViewController.m:implementation:methods:didReceiveMemoryWarning:super</string>
-					</array>
-				</dict>
 				<key>Swift</key>
 				<dict>
 					<key>Nodes</key>
@@ -60,13 +44,251 @@
 						<string>RouteProtocol.swift</string>
 						<string>DoubleExtension.swift</string>
 						<string>UIViewControllerExtension.swift</string>
+						<string>../Podfile</string>
 					</array>
 				</dict>
 			</dict>
 		</dict>
+		<dict>
+			<key>Identifier</key>
+  			<string>addNetworkPod</string>
+  			<key>Name</key>
+  			<string>Include Alamofire</string>
+  			<key>Description</key>
+  			<string>Adds Alamofire pod to the default Podfile</string>
+  			<key>Type</key>
+  			<string>checkbox</string>
+  			<key>Default</key>
+  			<string>false</string>
+  			<key>NotPersisted</key>
+  			<true/>
+  			<key>Units</key>
+  			<dict>
+    			<key>true</key>
+   			 	<dict>
+    				<key>Nodes</key>
+          				<array>
+            				<string>../Podfile:pod:Alamofire</string>
+          				</array>
+   	 			</dict>
+  			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+  			<string>addPromiseKitPod</string>
+  			<key>Name</key>
+  			<string>Include PromiseKit</string>
+  			<key>Description</key>
+  			<string>Adds PromiseKit pod to the default Podfile</string>
+  			<key>Type</key>
+  			<string>checkbox</string>
+  			<key>Default</key>
+  			<string>false</string>
+  			<key>NotPersisted</key>
+  			<true/>
+  			<key>Units</key>
+  			<dict>
+    			<key>true</key>
+   			 	<dict>
+    				<key>Nodes</key>
+          				<array>
+            				<string>../Podfile:pod:PromiseKit</string>
+          				</array>
+   	 			</dict>
+  			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+  			<string>addSwifterSwiftPod</string>
+  			<key>Name</key>
+  			<string>Include SwifterSwift</string>
+  			<key>Description</key>
+  			<string>Adds SwifterSwift pod to the default Podfile</string>
+  			<key>Type</key>
+  			<string>checkbox</string>
+  			<key>Default</key>
+  			<string>false</string>
+  			<key>NotPersisted</key>
+  			<true/>
+  			<key>Units</key>
+  			<dict>
+    			<key>true</key>
+   			 	<dict>
+    				<key>Nodes</key>
+          				<array>
+            				<string>../Podfile:pod:SwifterSwift</string>
+          				</array>
+   	 			</dict>
+  			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+  			<string>addCrashlyticsPod</string>
+  			<key>Name</key>
+  			<string>Include Crashlytics</string>
+  			<key>Description</key>
+  			<string>Adds Crashlytics pod to the default Podfile</string>
+  			<key>Type</key>
+  			<string>checkbox</string>
+  			<key>Default</key>
+  			<string>false</string>
+  			<key>NotPersisted</key>
+  			<true/>
+  			<key>Units</key>
+  			<dict>
+    			<key>true</key>
+   			 	<dict>
+    				<key>Nodes</key>
+          				<array>
+            				<string>../Podfile:pod:Fabric</string>
+            				<string>../Podfile:pod:Crashlytics</string>
+          				</array>
+   	 			</dict>
+  			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+  			<string>addRealmSwiftPod</string>
+  			<key>Name</key>
+  			<string>Include RealmSwift</string>
+  			<key>Description</key>
+  			<string>Adds RealmSwift pod to the default Podfile</string>
+  			<key>Type</key>
+  			<string>checkbox</string>
+  			<key>Default</key>
+  			<string>false</string>
+  			<key>NotPersisted</key>
+  			<true/>
+  			<key>Units</key>
+  			<dict>
+    			<key>true</key>
+   			 	<dict>
+    				<key>Nodes</key>
+          				<array>
+            				<string>../Podfile:pod:RealmSwift</string>
+          				</array>
+   	 			</dict>
+  			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+  			<string>addGoogleMapsPod</string>
+  			<key>Name</key>
+  			<string>Include GoogleMaps</string>
+  			<key>Description</key>
+  			<string>Adds GoogleMaps pod to the default Podfile</string>
+  			<key>Type</key>
+  			<string>checkbox</string>
+  			<key>Default</key>
+  			<string>false</string>
+  			<key>NotPersisted</key>
+  			<true/>
+  			<key>Units</key>
+  			<dict>
+    			<key>true</key>
+   			 	<dict>
+    				<key>Nodes</key>
+          				<array>
+            				<string>../Podfile:pod:GoogleMaps</string>
+          				</array>
+   	 			</dict>
+  			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+  			<string>addKingfisherPod</string>
+  			<key>Name</key>
+  			<string>Include Kingfisher Image Downloader</string>
+  			<key>Description</key>
+  			<string>Adds Kingfisher pod to the default Podfile</string>
+  			<key>Type</key>
+  			<string>checkbox</string>
+  			<key>Default</key>
+  			<string>false</string>
+  			<key>NotPersisted</key>
+  			<true/>
+  			<key>Units</key>
+  			<dict>
+    			<key>true</key>
+   			 	<dict>
+    				<key>Nodes</key>
+          				<array>
+            				<string>../Podfile:pod:Kingfisher</string>
+          				</array>
+   	 			</dict>
+  			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+  			<string>addNotificationBannerSwiftPod</string>
+  			<key>Name</key>
+  			<string>Include NotificationBannerSwift</string>
+  			<key>Description</key>
+  			<string>Adds NotificationBannerSwift pod to the default Podfile</string>
+  			<key>Type</key>
+  			<string>checkbox</string>
+  			<key>Default</key>
+  			<string>false</string>
+  			<key>NotPersisted</key>
+  			<true/>
+  			<key>Units</key>
+  			<dict>
+    			<key>true</key>
+   			 	<dict>
+    				<key>Nodes</key>
+          				<array>
+            				<string>../Podfile:pod:NotificationBannerSwift</string>
+          				</array>
+   	 			</dict>
+  			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+  			<string>addSnapKitPod</string>
+  			<key>Name</key>
+  			<string>Include SnapKit</string>
+  			<key>Description</key>
+  			<string>Adds SnapKit pod to the default Podfile</string>
+  			<key>Type</key>
+  			<string>checkbox</string>
+  			<key>Default</key>
+  			<string>false</string>
+  			<key>NotPersisted</key>
+  			<true/>
+  			<key>Units</key>
+  			<dict>
+    			<key>true</key>
+   			 	<dict>
+    				<key>Nodes</key>
+          				<array>
+            				<string>../Podfile:pod:SnapKit</string>
+          				</array>
+   	 			</dict>
+  			</dict>
+		</dict>
 	</array>
 	<key>Definitions</key>
 	<dict>
+		<key>../Podfile</key>
+		<dict>
+  			<key>TargetIndices</key>
+  			<array/>
+  			<key>Beginning</key>
+  			<string>source &apos;https://github.com/CocoaPods/Specs.git&apos;
+					# platform :ios, &apos;9.0&apos;
+					target &apos;___PACKAGENAME___&apos; do
+
+					use_frameworks!
+  			</string>
+  			<key>End</key>
+  			<string>end</string>
+  			<key>Group</key>
+  			<array>
+    			<string>Removable Resources</string>
+  			</array>
+			</dict>
+			<key>../Podfile:pod:*</key>
+    		<string>pod &apos;___*___&apos;</string>
 		<key>Base.lproj/Main.storyboard</key>
 		<dict>
 			<key>Path</key>
